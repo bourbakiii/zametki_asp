@@ -1,9 +1,17 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Все заметки";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<script src="~/js/index-page.js"></script>
+
+<h1>@ViewData["Title"]</h1>
+<div class="index-page__products">
+    <a class="index-page__products__item">
+        <p class="index-page__products__item__name">Название</p>
+        <span class="index-page__products__item__content">Мы были прибитыми к полу походу однажды. Я разыграю тебя до мурашек, где-то подобно соблазну и миражу. Ты видишь какя пою, видишь как рублю все понапиханных МС под корень. Доказывать как проявлять к музе лав-стори забейте нам столик.</span>
+        <span class="index-page__products__item__date">24.05.2002 12:00</span>
+    </a>
 </div>
+
+<button onclick='setIndexPageProducts' class="btn btn-primary">Отобразить</button>
 

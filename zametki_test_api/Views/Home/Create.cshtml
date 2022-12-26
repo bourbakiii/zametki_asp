@@ -1,7 +1,16 @@
 ﻿@{
-    ViewData["Title"] = "Privacy Policy";
+    ViewData["Title"] = "Созданить заметку";
 }
 <h1>@ViewData["Title"]</h1>
+<form class='form' method="post" onsubmit="addProduct(event)">
+    <div class="form-group">
+        <label for="exampleInputEmail1">Название заметки</label>
+        <input name="name" type="text" class="form-control" id="add-name" placeholder="Введите название">
+    </div>
+    <div class="form-group">
+        <label for="exampleInputPassword1">Password</label>
+        <textarea name="content" class="form-control" id="add-content" placeholder="Введите содержимое заметки"></textarea>
+    </div>
 
-<p>Use this page to detail your site's privacy policy.</p>
-
+    <button type="submit" class="btn btn-primary">Создать заметку</button>
+</form>
