@@ -2,10 +2,15 @@
 
 window.onload = () => setIndexPageProducts();
 
-
 function setIndexPageProducts() {
     const parentDOM = document.querySelector(".index-page__products");
-    getProducts().forEach(product => parentDOM.appendChild(createDOMProduct(product)));
+    const products = getProducts();
+    if (products.length) {
+        console.log("Products length higher than u think")
+        parentDOM.classList.remove("index-page__products_empty");
+        parentDOM.innerHTML = '';
+    }
+    products.forEach(product => parentDOM.appendChild(createDOMProduct(product)));
 };
 
 function createDOMProduct(product) {

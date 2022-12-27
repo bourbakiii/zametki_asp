@@ -33,9 +33,12 @@ main {
 .index-page__products {
     display: grid;
     gap: 10px;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 24%));
+    width:100%;
+    grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
 }
-
+.index-page__products_empty {
+    display:block;
+}
 .index-page__products__item:hover {
     box-shadow: 0 0 10px 0.1px rgba(0,0,0,.3);
 }
@@ -93,8 +96,6 @@ main {
     font-size: 0.8em;
     transition: 0.3s;
 }
-
-
 
 form {
     display:flex;

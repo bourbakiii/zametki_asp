@@ -5,13 +5,9 @@
 <script src="~/js/index-page.js"></script>
 
 <h1>@ViewData["Title"]</h1>
-<div class="index-page__products">
-    <a class="index-page__products__item">
-        <p class="index-page__products__item__name">Название</p>
-        <span class="index-page__products__item__content">Мы были прибитыми к полу походу однажды. Я разыграю тебя до мурашек, где-то подобно соблазну и миражу. Ты видишь какя пою, видишь как рублю все понапиханных МС под корень. Доказывать как проявлять к музе лав-стори забейте нам столик.</span>
-        <span class="index-page__products__item__date">24.05.2002 12:00</span>
-    </a>
+<div class="index-page__products index-page__products_empty">
+    Кажется, заметок пока нет
 </div>
 
-<button onclick='setIndexPageProducts' class="btn btn-primary">Отобразить</button>
+<button onclick='setIndexPageProducts()' class="btn btn-primary">Отобразить</button>
 
