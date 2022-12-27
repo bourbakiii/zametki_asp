@@ -6,8 +6,14 @@
 
 <h1>@ViewData["Title"]</h1>
 <div class="index-page__products index-page__products_empty">
-    Кажется, заметок пока нет
 </div>
 
-<button onclick='setIndexPageProducts()' class="btn btn-primary">Отобразить</button>
 
+
+<div class="modal__wrapper">
+    <div class="modal">
+        <h2 contenteditable="true" class="modal__name"></h2>
+        <span contenteditable="true" class="modal__content"></span>
+        <span class="modal__date"></span>
+    </div>
+</div>
